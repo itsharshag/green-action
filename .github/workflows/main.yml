@@ -11,9 +11,9 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
 
-    - name: Run php-cs-fixer
+    - name: Update date.txt
       run: date '+%Y-%m-%d %H:%M:%S' > date.txt
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Apply php-cs-fixer changes
+        commit_message: Update date.txt
